@@ -1,2 +1,4 @@
-<h1>{{ site.Title }}</h1>
-{{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+<div class="flex justify-between items-center">
+    <h1 class="text-4xl text-gray-700 my-7 font-bold">{{ site.Title }}</h1>
+    {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+</div>
