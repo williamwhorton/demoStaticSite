@@ -1,11 +1,11 @@
 <div class="card flex flex-col gap-2">
-    {{ if .Params.image }}
+    {{ if .image }}
     <div class="image-container">
-        <img src="{{ .Params.image }}" alt="{{ .altText }}">
+        <img src="{{ .image }}" alt="{{ .altText }}">
     </div>
     {{ end }}
     <div class="text-container flex flex-col gap-2 px-2">
-        <h2 class="font-bold">{{ .Title }}</h2>
-        <p class="gray-400">{{ .Description }}</p>
+        <h2 class="font-bold">{{ .title }}</h2>
+        <p class="gray-400">{{ .description }}</p>
     </div>
 </div>

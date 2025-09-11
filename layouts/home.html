@@ -1,3 +1,12 @@
 {{ define "main" }}
-    {{ partial "main_hero.html" . }}
+    {{ partial "main_hero.html" .Params.main_hero }}
+    <section class="py-12">
+        <h2 class="text-3xl font-bold mb-4 text-gray-900">{{ .Params.subheading }}</h2>
+        <p>{{ .Content }}</p>
+    </section>
+    <div class="py-12 grid grid-cols-3 gap-12">
+    {{ range .Params.card }}
+        {{ partial "card.html" . }}
+    {{ end }}
+    </div>
 {{ end }}
